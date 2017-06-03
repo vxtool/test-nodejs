@@ -1,0 +1,30 @@
+{
+  "name": "test-nodejs",
+  "version": "1.0.0",
+  "description": "tests",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/blacksmiths-tools/test-nodejs.git"
+  },
+  "keywords": [
+    "nodejs"
+  ],
+  "author": "Hemerson Vianna",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/blacksmiths-tools/test-nodejs/issues"
+  },
+  "homepage": "https://github.com/blacksmiths-tools/test-nodejs#readme",
+  "devDependencies": {
+    "chai": "^4.0.1",
+    "nock": "^9.0.13",
+    "sinon": "^2.3.2"
+  },
+  "dependencies": {
+    "request": "^2.81.0"
+  }
+}
