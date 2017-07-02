@@ -1,12 +1,12 @@
-const getItems = require('./get-items');
-const getItem = require('./get-item');
-const saveItem = require('./save-item');
+const getAll = require('./get-all');
+const getId = require('./get-id');
+const postId = require('./post-id');
 
 module.exports = {
-    // GET /items/:id
-    getItem: getItem,
-    // GET /items
-    getItems: getItems,
-    // POST /items
-    saveItem: saveItem
+  // GET /items
+  getAll: getAll,
+  // GET /items/:id
+  getId: getId,
+  // POST /items
+  postId: postId
 };

@@ -1,6 +1,7 @@
 const express = require('express');
 const errorHandler = require('errorhandler');
 const bodyParser = require('body-parser');
+const path = require('path');
 
 const middleware = require('./lib/middleware');
 const mongodb = require('./lib/mongodb');
@@ -33,7 +34,7 @@ routes.setup(app);
 app.use(errorHandler());
 
 // Connect to Mongo on start
-mongodb.connect(config.db, function(err) {
+mongodb.connect(config.mongodb.url, function(err) {
   if (err) {
     console.log('Unable to connect to Mongo.');
     process.exit(1)
