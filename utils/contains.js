@@ -1,6 +1,6 @@
 module.exports = {
   inArray: (array, it) => {
-    if(array.constructor !== Array) {
+    if(!array || array.constructor !== Array) {
       return false;
     }
     if(it) {
@@ -10,7 +10,7 @@ module.exports = {
             return true;
           }
         }
-      } else {
+      } else if(it.constructor === String) {
         if (array.includes(it)){
           return true;
         }
